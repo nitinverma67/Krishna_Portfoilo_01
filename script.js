@@ -39,7 +39,7 @@ menuToggle?.addEventListener('click', () => {
   const isOpen = navMenu.classList.toggle('open');
   menuToggle.setAttribute('aria-expanded', String(isOpen));
   menuToggle.setAttribute('aria-label', isOpen ? 'Close navigation' : 'Open navigation');
-  menuToggle.textContent = isOpen ? '×' : '☰';
+  menuToggle.textContent = isOpen ? '☰' : '☰';
 });
 
 document.getElementById('year').textContent = new Date().getFullYear();
