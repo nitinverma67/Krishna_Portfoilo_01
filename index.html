@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Krishna Kushwah, B.Tech Artificial Intelligence and Data Science student.">
+  <title>Krishna Kushwah</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+      <a class="brand-logo" href="#home" onclick="switchSection('home'); return false;">KRISHNA KUSHWAH<span>.</span></a>
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="navLinks">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a class="nav-link active" href="#home" data-section="home">Home</a></li>
+        <li><a class="nav-link" href="#project" data-section="project">Projects</a></li>
+        <li><a class="nav-link" href="#internship" data-section="internship">Internship</a></li>
+        <li><a class="nav-link" href="#certificates" data-section="certificates">Certificates</a></li>
+        <li><a class="nav-link" href="#contact" data-section="contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="page-section active">
+      <div class="hero">
+      
+        <h1>Hi, I'm <span>Krishna Kushwah.</span></h1>
+        <p class="hero-copy">A curious student and aspiring developer who enjoys learning technology and building practical solutions.</p>
+        <div class="hero-actions">
+          <a class="button button-dark" href="#project" data-section="project">Explore my work <span aria-hidden="true">↗</span></a>
+          <a class="button button-light" href="#contact" data-section="contact">Contact</a>
+        </div>
+        <div class="hero-note"><span class="status-dot"></span> Open to learning and career opportunities</div>
+      </div>
+
+    
+      <div class="">
+       
+          
+          <h3>About Me</h3>
+          <p>I am a B.Tech student in Artificial Intelligence and Data Science, passionate about learning new technologies and solving real-world problems. I am a quick learner, hardworking, and always eager to improve my skills.</p>
+       
+       
+      </div>
+
+      
+      <div class="">
+
+          <h3>Education</h3>
+          <div class="timeline">
+            <div class="timeline-item">
+              <span class="timeline-date">2023 – 2027</span>
+              <h4>B.Tech — Artificial Intelligence & Data Science</h4>
+              <p>Jai Narain College of Technology, Bhopal</p>
+              <span class="tag">Currently pursuing</span>
+            </div>
+            <div class="timeline-item">
+              <span class="timeline-date">Higher Secondary</span>
+              <h4>Class 12 — 78%</h4>
+              <p>Vinayak Higher Secondary School, Vidisha</p>
+            </div>
+            <div class="timeline-item">
+              <span class="timeline-date">High School</span>
+              <h4>Class 10 — 76%</h4>
+              <p>Vinayak Higher Secondary School, Vidisha</p>
+            </div>
+          </div>
+       
+       
+          <h3>Technical Skills</h3>
+          
+          <div class="skill-list">
+            <span class="skill">Java</span>
+            <span class="skill">Data Structures & Algorithms</span>
+            <span class="skill">HTML</span>
+            <span class="skill">CSS</span>
+            <span class="skill">JavaScript</span>
+            <span class="skill">Microsoft Power BI</span>
+          </div>
+        
+      </div>
+
+      <article class="contact-strip">
+        <div><p class="eyebrow">LET'S CONNECT</p><h2>Have an enquiry?</h2></div>
+        <a class="button button-dark" href="#contact" data-section="contact">Contact me <span aria-hidden="true">↗</span></a>
+      </article>
+    </section>
+
+    <section id="project" class="page-section">
+      <div class="page-intro"><h2>Projects</h2><p>projects on which I worked </p></div>
+      <article class="project-card">
+        <div class="project-number">01</div>
+        <h3>Smart Waste Management System</h3>
+        <p class="project-summary">An IoT-based concept focused on smarter waste collection and monitoring.</p>
+        <div class="skill-list"><span class="skill">Java</span><span class="skill">IoT Concepts</span><span class="skill">Documentation</span></div>
+        <ul class="feature-list">
+          <li>Developed the concept for an IoT-based smart waste management system.</li>
+          <li>Designed smart dustbin monitoring concepts.</li>
+          <li>Worked on system flow, user interface planning, and documentation.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="internship" class="page-section">
+      <div class="page-intro"><h2>Internship</h2></div>
+      <div class="empty-state"><h3>Update soon</h3><p>No internships have been added yet.</p></div>
+    </section>
+
+    <section id="certificates" class="page-section">
+      <div class="page-intro"><h2>Certificates</h2></div>
+      <div class="empty-state"><h3>Learning in progress</h3><p>Certifications are added very soon</p></div>
+    </section>
+
+    <section id="contact" class="page-section">
+      <div class="page-intro"><h2>Let's talk</h2><p>Have a job, internship, freelance, or project opportunity? Send a message.</p></div>
+      <div class="contact-layout">
+        <aside class="contact-card">
+          <h2>Contact details</h2>
+          <p class="muted">Feel free to reach out using the details below.</p>
+          <div class="detail-item"><span class="detail-label">EMAIL</span><a href="mailto:krishnakushwah7970@gmail.com">krishnakushwah7970@gmail.com</a></div>
+          <div class="detail-item"><span class="detail-label">PHONE</span><a href="tel:6267940540">+91 6267940540</a></div>
+          <div class="detail-item"><span class="detail-label">LOCATION</span><p>Vidisha, Madhya Pradesh</p></div>
+        </aside>
+        <div class="card form-card">
+          <div id="statusMessage" class="form-status" role="status" aria-live="polite"></div>
+          <form id="contactForm">
+            <div class="form-row">
+              <div class="form-group"><label for="fullName">Full name</label><input type="text" id="fullName" name="fullName" autocomplete="name" required placeholder="Your name"></div>
+              <div class="form-group"><label for="phone">Phone number</label><input type="tel" id="phone" name="phone" autocomplete="tel" required placeholder="Your phone number"></div>
+            </div>
+            <div class="form-group"><label for="email">Email address</label><input type="email" id="email" name="email" autocomplete="email" required placeholder="you@example.com"></div>
+            <div class="form-group"><label for="reason">Reason for contact</label><select id="reason" name="reason" required><option value="" disabled selected>Select a reason</option><option>Job Offer</option><option>Internship Opportunity</option><option>Freelance Work</option><option>General Inquiry</option></select></div>
+            <div class="form-group"><label for="message">Message <span class="muted">(optional)</span></label><textarea id="message" name="message" rows="4" placeholder="Tell me a little about your message..."></textarea></div>
+            <button type="submit" class="button button-dark submit-btn">Submit <span aria-hidden="true">↗</span></button>
+            <p class="form-hint">This opens your email app with the message prepared. It does not send or store messages automatically.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  
+  <script src="script.js"></script>
+</body>
+</html>
+
+
